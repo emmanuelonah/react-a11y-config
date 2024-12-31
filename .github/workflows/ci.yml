@@ -1,0 +1,37 @@
+name: React A11y Config CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  suite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.9.0'
+
+      - name: Install packages
+        run: yarn install --ignore-scripts
+
+      - name: Run ESLint
+        run: yarn run lint
+
+      - name: Run UnitTest
+        env:
+          CI: false
+        run: yarn run test:cv
+
+      - name: Run BuildProject
+        env:
+          CI: false
+        run: yarn run build
