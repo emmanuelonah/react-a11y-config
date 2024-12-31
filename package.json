@@ -17,12 +17,17 @@
     "dev": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "lint": "eslint .",
+    "format": "prettier --write .",
     "sb": "storybook dev -p 6006",
     "b:sb": "storybook build",
+    "test:cv": "yarn run test --coverage --watchAll=false",
+    "pkgs:audit": " yarn audit --json > audit.json",
+    "pre:commit": "yarn run lint",
+    "pre:push": "yarn run test:cv && yarn run build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "prepare": "tsdx build"
+    "prepare": "husky install"
   },
   "peerDependencies": {
     "react": ">=16"
