@@ -1,0 +1,13 @@
+.lang-select {
+  border: solid 0.125rem #333;
+  border-radius: 0.3125rem;
+  width: 50%;
+  max-width: 12.5rem;
+  padding: 0.3125rem;
+}
+
+.lang-widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,93 @@
+.container {
+  position: relative;
+  margin: 4rem 0;
+  padding: 0 2rem;
+  border-right: solid 0.125rem var(--react-a11y-config-background-color);
+  border-left: solid 0.125rem var(--react-a11y-config-background-color);
+}
+
+.dog {
+  position: relative;
+  width: 6.25rem;
+  height: 3.125rem;
+  animation: jump 1s infinite;
+}
+
+.head {
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: var(--react-a11y-config-background-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 2.1875rem;
+}
+
+.ear {
+  width: 0.625rem;
+  height: 0.9375rem;
+  background-color: var(--react-a11y-config-background-color);
+  position: absolute;
+  top: -5px;
+  left: 1.5625rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+.body {
+  width: 4.375rem;
+  height: 1.875rem;
+  background-color: var(--react-a11y-config-background-color);
+  position: absolute;
+  bottom: 0;
+}
+
+.tail {
+  width: 0.625rem;
+  height: 1.25rem;
+  background-color: var(--react-a11y-config-background-color);
+  position: absolute;
+  bottom: 0.625rem;
+  left: -10px;
+}
+
+.front-leg {
+  width: 0.625rem;
+  height: 1.25rem;
+  background-color: var(--react-a11y-config-background-color);
+  position: absolute;
+  bottom: -20px;
+  left: 0.9375rem;
+}
+
+.back-leg {
+  width: 0.625rem;
+  height: 1.25rem;
+  background-color: var(--react-a11y-config-background-color);
+  position: absolute;
+  bottom: -20px;
+  left: 3.75rem;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.heading {
+  margin-top: 2rem;
+  line-height: 2;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--react-a11y-config-heading-color);
+}
+
+.paragraph {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--react-a11y-config-paragraph-color);
+}

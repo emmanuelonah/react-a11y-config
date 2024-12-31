@@ -1,0 +1,35 @@
+.config-section {
+  margin-top: 2rem;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 0.0625rem #333;
+    border-radius: 0.1875rem;
+    padding: 0.625rem;
+
+    & label {
+      color: #ff0000;
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+      gap: 0.625rem;
+      font-size: 0.8rem;
+    }
+
+    & input {
+      width: 9.375rem;
+      padding: 0.3rem;
+    }
+  }
+}
+
+.title {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  color: #ff0000;
+  margin-bottom: 0.5rem;
+}
