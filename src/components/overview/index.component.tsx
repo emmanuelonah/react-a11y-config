@@ -4,17 +4,19 @@ import './index.styles.css';
 
 export function Overview() {
   return (
-    <div className="container">
-      <div className="dog">
-        <div className="ear"></div>
-        <div className="head"></div>
-        <div className="body"></div>
-        <div className="tail"></div>
-        <div className="leg front-leg"></div>
-        <div className="leg back-leg"></div>
+    <div className="overview">
+      <div>
+        <h1 className="heading">Headings</h1>
+        <p className="paragraph">Contents</p>
       </div>
-      <h1 className="heading">Headings</h1>
-      <p className="paragraph">Contents</p>
+      <div className="wheelchair">
+        <div className="wheelchair-seat"></div>
+        <div className="wheelchair-backrest"></div>
+        <div className="wheelchair-wheel left-wheel"></div>
+        <div className="wheelchair-wheel right-wheel"></div>
+        <div className="wheelchair-armrest left-armrest"></div>
+        <div className="wheelchair-armrest right-armrest"></div>
+      </div>
     </div>
   );
 }

@@ -1,81 +1,69 @@
-.container {
-  position: relative;
-  margin: 4rem 0;
-  padding: 0 2rem;
+.overview {
   border-right: solid 0.125rem var(--react-a11y-config-background-color);
   border-left: solid 0.125rem var(--react-a11y-config-background-color);
+  padding: 0 2rem;
+  margin: 4rem 0;
+  display: flex;
+  gap: 2rem;
 }
 
-.dog {
+.wheelchair {
   position: relative;
-  width: 6.25rem;
-  height: 3.125rem;
-  animation: jump 1s infinite;
+  width: 12.5rem;
+  height: 6.25rem;
 }
 
-.head {
-  width: 1.875rem;
-  height: 1.875rem;
-  background-color: var(--react-a11y-config-background-color);
-  border-radius: 50%;
+.wheelchair-seat {
   position: absolute;
-  top: -10px;
-  left: 2.1875rem;
+  bottom: 2.5rem;
+  left: 1.25rem;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: var(--react-a11y-config-background-color);
+  border-radius: 0.3125rem;
 }
 
-.ear {
-  width: 0.625rem;
-  height: 0.9375rem;
-  background-color: var(--react-a11y-config-background-color);
+.wheelchair-backrest {
   position: absolute;
-  top: -5px;
-  left: 1.5625rem;
-  border-radius: 0.3125rem 0.3125rem 0 0;
+  bottom: 5rem;
+  left: 1.25rem;
+  width: 1.25rem;
+  height: 2.5rem;
+  background-color: var(--react-a11y-config-background-color);
 }
 
-.body {
-  width: 4.375rem;
-  height: 1.875rem;
-  background-color: var(--react-a11y-config-background-color);
+.wheelchair-wheel {
   position: absolute;
   bottom: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--react-a11y-config-background-color);
+  border-radius: 50%;
 }
 
-.tail {
-  width: 0.625rem;
-  height: 1.25rem;
-  background-color: var(--react-a11y-config-background-color);
+.left-wheel {
+  left: 0.625rem;
+}
+
+.right-wheel {
+  right: 0.625rem;
+}
+
+.wheelchair-armrest {
   position: absolute;
-  bottom: 0.625rem;
+  width: 3.75rem;
+  height: 0.625rem;
+  background-color: var(--react-a11y-config-background-color);
+}
+
+.left-armrest {
+  top: 30px;
   left: -10px;
 }
 
-.front-leg {
-  width: 0.625rem;
-  height: 1.25rem;
-  background-color: var(--react-a11y-config-background-color);
-  position: absolute;
-  bottom: -20px;
-  left: 0.9375rem;
-}
-
-.back-leg {
-  width: 0.625rem;
-  height: 1.25rem;
-  background-color: var(--react-a11y-config-background-color);
-  position: absolute;
-  bottom: -20px;
-  left: 3.75rem;
-}
-
-@keyframes jump {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
+.right-armrest {
+  top: 30px;
+  right: -10px;
 }
 
 .heading {
@@ -90,4 +78,5 @@
   font-size: 0.8rem;
   font-style: italic;
   color: var(--react-a11y-config-paragraph-color);
+  margin-bottom: 3rem;
 }
