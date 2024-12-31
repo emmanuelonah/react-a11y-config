@@ -44,6 +44,6 @@ function App() {
 
 ## Sample
 
-<img src="./src/assets/icn-mobile.png" alt="" />
+<img src="./src/assets/icn-mobile.png" alt="" width="300" />
 
 <img src="./src/assets/icn-desktop.png" alt="" />
